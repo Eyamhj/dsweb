@@ -1,0 +1,34 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav .nav-link {
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: #ffc107;
+}
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h2 {
+    color: #007bff;
+    font-weight: bold;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matières Étudiées</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Table Section */
+        .table-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #16213e;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        td {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        tr:hover {
+            background-color: #f9fafb;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html">Événements</a>
+            <a href="matieres.html">Matières</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Matières Étudiées</h1>
+        <p>Liste des matières principales étudiées durant mon cursus</p>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Année</th>
+                    <th>Matière</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1ère Année</td>
+                    <td>Algorithmes et Structures de Données</td>
+                    <td>Introduction aux algorithmes et structures de données.</td>
+                </tr>
+                <tr>
+                    <td>1ère Année</td>
+                    <td>Programmation en C</td>
+                    <td>Initiation au langage C et bases de la programmation.</td>
+                </tr>
+                <tr>
+                    <td>2ème Année</td>
+                    <td>Base de Données Relationnelles</td>
+                    <td>Apprentissage des concepts SQL et modèles relationnels.</td>
+                </tr>
+                <tr>
+                    <td>2ème Année</td>
+                    <td>Programmation Orientée Objet</td>
+                    <td>Introduction à la programmation avec Java.</td>
+                </tr>
+                <tr>
+                    <td>3ème Année</td>
+                    <td>Big Data</td>
+                    <td>Analyse et manipulation de grandes quantités de données.</td>
+                </tr>
+                <tr>
+                    <td>3ème Année</td>
+                    <td>Business Intelligence</td>
+                    <td>Concepts et outils pour la prise de décision basée sur les données.</td>
+                </tr>
+                <tr>
+                    <td>3ème Année</td>
+                    <td>Développement Web</td>
+                    <td>Création d'applications web modernes avec HTML, CSS, JS.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

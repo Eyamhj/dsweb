@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages et Expériences</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Stages Section */
+        .stages-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stage:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .stage:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .stage-icon {
+            flex: 0 0 80px;
+            font-size: 4rem;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        .stage-content {
+            flex: 1;
+            margin-left: 1rem;
+        }
+
+        .stage-content h3 {
+            font-size: 1.5rem;
+            color: #16213e;
+            margin-bottom: 0.5rem;
+        }
+
+        .stage-content p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .stage-content .date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stage {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .stage:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .stage-content {
+                margin-left: 0;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Mes Stages</h1>
+        <p>Découvrez mes expériences professionnelles et stages pratiques</p>
+    </section>
+
+    <!-- Stages Section -->
+    <section class="stages-container">
+        <!-- Stage 1 -->
+        <div class="stage">
+            <div class="stage-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <div class="stage-content">
+                <h3>Stage d'été</h3>
+                <p>Développement d'une application web avec HTML, CSS et Bootstrap.</p>
+                <div class="date">Juillet - Août 2022</div>
+            </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage">
+            <div class="stage-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="stage-content">
+                <h3>Stage de Fin d'Études</h3>
+                <p>Création d'une solution de gestion de données avec Python et MongoDB.</p>
+                <div class="date">Février - Mai 2023</div>
+            </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage">
+            <div class="stage-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="stage-content">
+                <h3>Stage Analyse de Données</h3>
+                <p>Analyse et visualisation de données avec Power BI.</p>
+                <div class="date">Janvier 2023</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

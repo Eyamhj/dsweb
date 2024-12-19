@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages IIT</title>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Témoignages */
+        .testimonials-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .testimonial {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        .testimonial-icon {
+            color: #00bcd4;
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #16213e;
+            margin-top: 0.5rem;
+        }
+
+        .testimonial-content {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html">Événements</a>
+            <a href="matieres.html">Matières</a>
+            <a href="projets.html">Projets</a>
+            <a href="temoignages-iit.html">Témoignages</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Témoignages sur l’IIT</h1>
+        <p>Les retours d'expérience de nos étudiants et diplômés</p>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials-container">
+        <!-- Témoignage 1 -->
+        <div class="testimonial">
+            <span class="testimonial-icon"><i class="fas fa-quote-left"></i></span>
+            <p class="testimonial-content">
+                "L’IIT m’a permis de développer des compétences solides en informatique et de décrocher un emploi rapidement après mes études."
+            </p>
+            <div class="testimonial-author">– Sarah Ben Ali</div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="testimonial">
+            <span class="testimonial-icon"><i class="fas fa-quote-left"></i></span>
+            <p class="testimonial-content">
+                "Les enseignants sont toujours disponibles et compétents, et l’environnement de travail est idéal pour apprendre et grandir."
+            </p>
+            <div class="testimonial-author">– Ahmed Trabelsi</div>
+        </div>
+
+        <!-- Témoignage 3 -->
+        <div class="testimonial">
+            <span class="testimonial-icon"><i class="fas fa-quote-left"></i></span>
+            <p class="testimonial-content">
+                "Grâce à l’IIT, j’ai pu participer à des projets innovants et préparer mon avenir dans le domaine du développement logiciel."
+            </p>
+            <div class="testimonial-author">– Leila Khemiri</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

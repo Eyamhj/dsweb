@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Compétences Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+        }
+
+        .skill-card {
+            background-color: white;
+            border: 2px solid #16213e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            color: #00bcd4;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            color: #16213e;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Graphique */
+        .chart-container {
+            margin: 2rem auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .chart-container h2 {
+            font-size: 1.8rem;
+            color: #16213e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Mes Compétences</h1>
+        <p>Découvrez mes compétences techniques et professionnelles</p>
+    </section>
+
+    <!-- Compétences Section -->
+    <section class="skills-container">
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <p>Structuration des pages web avec HTML moderne.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <p>Création de designs responsives et élégants.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <p>Interactivité et animations pour les applications web.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h3>Python</h3>
+            <p>Développement de scripts et applications.</p>
+        </div>
+    </section>
+
+    <!-- Graphique des compétences -->
+    <section class="chart-container">
+        <h2>Niveaux de Compétences</h2>
+        <canvas id="skillsChart"></canvas>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Chart.js -->
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['HTML5', 'CSS3', 'JavaScript', 'Python', 'MySQL'],
+                datasets: [{
+                    label: 'Niveau en pourcentage',
+                    data: [95, 90, 85, 80, 70],
+                    backgroundColor: [
+                        '#00bcd4',
+                        '#16213e',
+                        '#ff9800',
+                        '#4caf50',
+                        '#e91e63'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

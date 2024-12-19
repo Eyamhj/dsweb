@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Swiper Carousel */
+        .swiper-container {
+            margin: 3rem auto;
+            padding: 0 1rem;
+            max-width: 1100px;
+        }
+
+        .swiper-slide {
+            background-color: #ffffff;
+            border: 2px solid #16213e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .swiper-slide:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .swiper-slide h5 {
+            color: #16213e;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .swiper-slide p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: #00bcd4;
+            margin-bottom: 1rem;
+        }
+
+        /* Flèches Swiper */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #16213e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Mon Parcours</h1>
+        <p>Découvrez mon chemin académique et professionnel</p>
+    </section>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Carte 1 -->
+            <div class="swiper-slide">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <h5>Baccalauréat en Science Informatique</h5>
+                <p>Obtenu en 2020 avec mention.</p>
+            </div>
+            <!-- Carte 2 -->
+            <div class="swiper-slide">
+                <div class="icon"><i class="fas fa-book"></i></div>
+                <h5>Licence en Science Informatique</h5>
+                <p>Diplômé(e) en 2023, spécialité Big Data et Analyse de Données.</p>
+            </div>
+            <!-- Carte 3 -->
+            <div class="swiper-slide">
+                <div class="icon"><i class="fas fa-cogs"></i></div>
+                <h5>Cycle Ingénieur</h5>
+                <p>Actuellement en cours, spécialisation en analyse de données.</p>
+            </div>
+            <!-- Carte 4 -->
+            <div class="swiper-slide">
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                <h5>Stage de Fin d'Études</h5>
+                <p>Développement d’une solution avec Python et MongoDB.</p>
+            </div>
+            <!-- Carte 5 -->
+            <div class="swiper-slide">
+                <div class="icon"><i class="fas fa-tools"></i></div>
+                <h5>Stage d'Été</h5>
+                <p>Développement web avec HTML, CSS et Bootstrap.</p>
+            </div>
+        </div>
+        <!-- Flèches -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                576: { slidesPerView: 1 },
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements et Manifestations</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Événements Section */
+        .events-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .event {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .event:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .event img {
+            flex: 0 0 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .event-content {
+            flex: 1;
+            margin-left: 1rem;
+            text-align: left;
+        }
+
+        .event-content h3 {
+            font-size: 1.5rem;
+            color: #16213e;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .event-content .date {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .event {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .event:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .event img {
+                margin-bottom: 1rem;
+            }
+
+            .event-content {
+                margin-left: 0;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html">Événements</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Événements et Manifestations</h1>
+        <p>Découvrez les événements auxquels j'ai participé ou contribué</p>
+    </section>
+
+    <!-- Événements Section -->
+    <section class="events-container">
+        <!-- Événement 1 -->
+        <div class="event">
+            <img src="https://via.placeholder.com/150" alt="Événement 1">
+            <div class="event-content">
+                <h3>Conférence sur l'Intelligence Artificielle</h3>
+                <p>Participation à une conférence sur les avancées en IA et les défis éthiques.</p>
+                <div class="date">Mars 2023</div>
+            </div>
+        </div>
+
+        <!-- Événement 2 -->
+        <div class="event">
+            <img src="https://via.placeholder.com/150" alt="Événement 2">
+            <div class="event-content">
+                <h3>Hackathon National</h3>
+                <p>Développement d'une application web en équipe, avec présentation finale devant un jury.</p>
+                <div class="date">Novembre 2022</div>
+            </div>
+        </div>
+
+        <!-- Événement 3 -->
+        <div class="event">
+            <img src="https://via.placeholder.com/150" alt="Événement 3">
+            <div class="event-content">
+                <h3>Workshop sur Power BI</h3>
+                <p>Formation sur l'analyse et la visualisation de données avec Power BI.</p>
+                <div class="date">Juillet 2022</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

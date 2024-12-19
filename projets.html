@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets Réalisés</title>
+    <!-- FontAwesome CDN pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00d2ff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Projets Section */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 2px solid #16213e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1.5rem;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-image {
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            color: #16213e;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .project-tech {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #16213e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Mon Portfolio</div>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html">Événements</a>
+            <a href="matieres.html">Matières</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Projets Réalisés</h1>
+        <p>Un aperçu des projets que j'ai développés et réalisés</p>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="projects-container">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x150" alt="Projet 1" class="project-image">
+            <h3>Application de Gestion de Stock</h3>
+            <p>Une application web permettant de gérer efficacement le stock d'une entreprise.</p>
+            <div class="project-tech">Technologies : Java, MySQL</div>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x150" alt="Projet 2" class="project-image">
+            <h3>Solution BI pour Analyse de Données</h3>
+            <p>Plateforme d'analyse pour optimiser la prise de décision basée sur les données.</p>
+            <div class="project-tech">Technologies : Power BI, Python</div>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x150" alt="Projet 3" class="project-image">
+            <h3>Site Vitrine pour une Entreprise</h3>
+            <p>Création d'un site web moderne pour présenter les produits d'une société.</p>
+            <div class="project-tech">Technologies : HTML, CSS, JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
